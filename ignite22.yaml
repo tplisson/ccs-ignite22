@@ -1,0 +1,17 @@
+---
+    metadata:
+      name: "PANW Policy ignite22 - Ensure Azure ACI images are obtained from PANW approved private repositories" 
+      id: ignite22
+      guidelines: "Ensure Azure ACI images are obtained from PANW approved private repositories" 
+      category: general
+      severity: high
+    scope:
+      provider: azure
+    definition:
+      and:
+        - cond_type: attribute
+          resource_types: 
+          - azurerm_container_group
+          attribute: container.image
+          operator: not_contains
+          value: "mcr.microsoft.com"
