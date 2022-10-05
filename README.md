@@ -2,13 +2,13 @@
 
 This demo is about writing your own simple custom build policy for Code Security (CCS) in Prisma Cloud.
 
-Sample  custom build policy
+Sample  custom build policy  
+[ignite22.tf](ignite22.tf)  
 
-Sample Terraform file for testing purposes
+Sample Terraform file for testing purposes  
+[ignite22.yaml](ignite22.yaml)  
 
-Running a [**Checkov**](https://www.checkov.io/) scan to double-check that our custom policy is 
-
-poliCustom policies are tested against sample TF files using 
+Custom policies can be tested against sample TF files using [**Checkov**](https://www.checkov.io/)
 ```
 checkov -f ignite22.tf -c ignite22 --external-checks-dir .
 ```
