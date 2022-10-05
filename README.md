@@ -27,13 +27,14 @@ checkov -d <tf_directory> -c <policy_id> --external-checks-dir <path_to_external
 
 To publish this new build policy into our CCS tenant, we can use the [`pccs-policy-playground`](https://github.com/kartikp10/pccs-policy-playground) API Script designed by Kartik Pande:
 
-We need to set our API keys first
-```commandline
+First, we need to set our API keys
+```console
 export PC_ACCESS_KEY=<KEY>
 export PC_SECRET_KEY=<SECRET>
 export PRISMA_API_URL=<URL>   e.g. https://api2.prismacloud.io
 ```
 
+We can then list, publish, update and delete policies from CCS
 ```
 alias pccs="python -m pccs.main"
 
@@ -45,8 +46,16 @@ pccs -u -f <path/policy_filename> -id <policy_id>    ### Update (--enable|disabl
 pccs -d -id <policy_id>                              ### Delete
 ```
 
+Here's how to publish my new custom policy
 ```console
 pccs -p -f ignite22.yaml  
 ```
 
 ![pccs-output](img/pccs-output.jpg)
+
+
+Here's how to delete it
+```console
+pccs -d -id d7a8763d-c7dc-4a30-aa39-259c60bbca49
+Deleted successfully.
+```
