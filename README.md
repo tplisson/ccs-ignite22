@@ -1,8 +1,38 @@
 # Code Security PS presentation at Ignite'22
 
 #### This is a simple demo about testing your own custom build policy for Prisma Cloud Code Security (CCS).
+<br/>
 
-Sample custom build policy (YAML format): [ignite22.tf](ignite22.tf)  
+Here's a sample custom build policy (written in YAML format) to ensure Azure Container Instance (ACI) images are obtained from some PANW approved private repository : [ignite22.yaml](ignite22.yaml)  
+
+`ignite22.yaml:`
+
+<details><summary>file</summary>
+
+```yaml
+---
+    metadata:
+      name: "PANW Policy ignite22 - Ensure Azure ACI images are obtained from PANW approved private repositories" 
+      id: ignite22
+      guidelines: "Ensure Azure ACI images are obtained from PANW approved private repositories" 
+      category: general
+      severity: high
+    scope:
+      provider: azure
+    definition:
+      and:
+        - cond_type: attribute
+          resource_types: 
+          - azurerm_container_group
+          attribute: container.image
+          operator: contains
+          value: "ignite22.azurecr.io"
+``` 
+
+</details>  
+<br/>
+
+Sample Terraform HCL file used to verify that our custom policy flags misconfigurations appropriately:  [ignite22.tf](ignite22.tf)  
 
 `ignite22.tf` 
 
@@ -74,35 +104,6 @@ resource "azurerm_container_group" "ignite22_fail_02" {
   }
 }
 ```
-
-</details>  
-<br/>
-
-Sample Terraform HCL file used to verify that our custom policy flags misconfigurations appropriately: [ignite22.yaml](ignite22.yaml)  
-
-`ignite22.yaml:`
-
-<details><summary>file</summary>
-
-```yaml
----
-    metadata:
-      name: "PANW Policy ignite22 - Ensure Azure ACI images are obtained from PANW approved private repositories" 
-      id: ignite22
-      guidelines: "Ensure Azure ACI images are obtained from PANW approved private repositories" 
-      category: general
-      severity: high
-    scope:
-      provider: azure
-    definition:
-      and:
-        - cond_type: attribute
-          resource_types: 
-          - azurerm_container_group
-          attribute: container.image
-          operator: contains
-          value: "ignite22.azurecr.io"
-``` 
 
 </details>
 <br/>
