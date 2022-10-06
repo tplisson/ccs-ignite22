@@ -130,9 +130,9 @@ checkov -d <tf_directory> -c <policy_id> --external-checks-dir <path_to_external
 
 ##### Publishing a custom policy to Prisma Cloud Code Security (CCS)
 
-To publish this new build policy into our CCS tenant, we can use the [`pccs-policy-playground`](https://github.com/kartikp10/pccs-policy-playground) API Script designed by Kartik Pande.
+To publish this new build policy into our CCS tenant, we can use the [`pccs-policy-playground`](https://github.com/kartikp10/pccs-policy-playground) API Script designed by Kartik Pande. This Python script has been copied to the [`pccs`](pccs/) folder.
 
-First, we need to set our API keys
+First, we need to set our API keys as environment variables
 ```console
 export PC_ACCESS_KEY=<KEY>
 export PC_SECRET_KEY=<SECRET>
@@ -151,7 +151,7 @@ pccs -u -f <path/policy_filename> -id <policy_id>    ### Update (--enable|disabl
 pccs -d -id <policy_id>                              ### Delete
 ```
 
-Here's how to publish my new custom policy
+Here's how to publish our new custom policy
 ```console
 pccs -p -f ignite22.yaml  
 ```
@@ -173,7 +173,7 @@ Deleted successfully.
 
 ##### Checkov Scan of a Terraform Plan file (in JSON format)
 
-Some scenarios may require you to scan a Terraform Plan file to make sure scans run smoothly in CI/CD pipeline. 
+Some scenarios may require you to scan a Terraform Plan file to make sure scans run smoothly in CI/CD pipelines. 
 
 This requires to create a Terraform Plan file in JSON format as described [here](https://www.checkov.io/7.Scan%20Examples/Terraform%20Plan%20Scanning.html).
 ```console
