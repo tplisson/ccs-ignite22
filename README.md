@@ -174,6 +174,29 @@ pccs -p -f ignite22.yaml
 </details>
 </br>
 
+
+The custom policy now appears in Code Security
+
+<!-- <details><summary>screenshot1</summary> -->
+
+![ccs-policy1](img/ccs-policy1.jpg)
+
+<!-- </details> -->
+
+<!-- <details><summary>screenshot2</summary> -->
+
+![ccs-policy2](img/ccs-policy2.jpg)
+
+<!-- </details> -->
+
+<!-- <details><summary>screenshot3</summary> -->
+
+![ccs-policy2](img/ccs-policy3.jpg)
+
+<!-- </details> -->
+</br>
+
+
 Here's how to delete it
 ```console
 pccs -d -id b701786c-ba2e-4397-a91d-00b32e76eb0d
