@@ -175,7 +175,7 @@ pccs -p -f ignite22.yaml
 
 Here's how to delete it
 ```console
-pccs -d -id d7a8763d-c7dc-4a30-aa39-259c60bbca49
+pccs -d -id b701786c-ba2e-4397-a91d-00b32e76eb0d
 ```
 ```
 Deleted successfully.
