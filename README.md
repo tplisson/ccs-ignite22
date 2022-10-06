@@ -32,7 +32,7 @@ Here's a sample custom build policy (written in YAML format) to ensure Azure Con
 </details>  
 <br/>
 
-Sample Terraform HCL file used to verify that our custom policy flags misconfigurations appropriately:  [ignite22.tf](ignite22.tf)  
+And this is sample Terraform file (HCL format) used to verify that our custom policy flags misconfigurations appropriately:  [ignite22.tf](ignite22.tf)  
 
 `ignite22.tf` 
 
