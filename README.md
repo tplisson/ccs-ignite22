@@ -177,7 +177,7 @@ Some scenarios may require you to scan a Terraform Plan file to make sure scans 
 
 This requires to create a Terraform Plan file in JSON format as described [here](https://www.checkov.io/7.Scan%20Examples/Terraform%20Plan%20Scanning.html).
 ```console
-terraform plan --out tfplan.binary && terraform show -json tfplan.binary | jq . > tfplan.json
+terraform plan --out ignite22.binary && terraform show -json ignite22.binary | jq . > ignite22.json
 ```
 
 <details><summary>output</summary>
@@ -189,7 +189,7 @@ terraform plan --out tfplan.binary && terraform show -json tfplan.binary | jq . 
 
 The resulting JSON can then be scanned with Checkov:
 ```console
-checkov -f tfplan.json --external-checks-dir . -c ignite22 --compact 
+checkov -f ignite22.json --external-checks-dir . -c ignite22 --compact 
 ```
 
 <details><summary>output</summary>
