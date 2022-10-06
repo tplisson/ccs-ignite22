@@ -3,11 +3,11 @@
 #### This is a simple demo about testing your own custom build policy for Prisma Cloud Code Security (CCS).
 <br/>
 
-Here's a sample custom build policy (written in YAML format) to ensure Azure Container Instance (ACI) images are obtained from some PANW approved private repository : [ignite22.yaml](ignite22.yaml)  
+Here's a sample custom build policy (written in YAML format) to ensure Azure Container Instance (ACI) images are obtained from some PANW approved private repository : 
 
-`ignite22.yaml:`
+[`ignite22.yaml`](ignite22.yaml)  
 
-<details><summary>file</summary>
+<!-- <details><summary>file</summary> -->
 
 ```yaml
 ---
@@ -29,7 +29,7 @@ Here's a sample custom build policy (written in YAML format) to ensure Azure Con
           value: "ignite22.azurecr.io"
 ``` 
 
-</details>  
+<!-- </details>   -->
 <br/>
 
 And this is sample Terraform file (HCL format) used to verify that our custom policy flags misconfigurations appropriately:  [ignite22.tf](ignite22.tf)  
@@ -126,11 +126,11 @@ checkov -f ignite22.tf --external-checks-dir . -c ignite22
 checkov -f ignite22.tf --external-checks-dir . -c ignite22 --compact
 ```
 
-<details><summary>output (compact)</summary>
+<!-- <details><summary>output (compact)</summary> -->
 
 ![ckv-hcl-compact-output](img/ckv-hcl-compact-output.jpg)
 
-</details>
+<!-- </details> -->
 </br>
 
 Checkov syntax (for more details check the [Checkov CLI reference](https://www.checkov.io/2.Basics/CLI%20Command%20Reference.html))
@@ -215,9 +215,9 @@ checkov -f ignite22.json --external-checks-dir . -c ignite22
 checkov -f ignite22.json --external-checks-dir . -c ignite22 --compact 
 ```
 
-<details><summary>output (compact)</summary>
+<!-- <details><summary>output (compact)</summary> -->
 
 ![ckv-plan-compact-output](img/ckv-plan-compact-output.jpg)
 
-</details>
+<!-- </details> -->
 </br>
