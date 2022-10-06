@@ -114,7 +114,18 @@ Custom policies can be tested against our sample TF files using [**Checkov**](ht
 checkov -f ignite22.tf --external-checks-dir . -c ignite22
 ```
 
-<details><summary>output</summary>
+<details><summary>full output</summary>
+
+![ckv-hcl-compact-output](img/ckv-hcl-full-output.jpg)
+
+</details>
+</br>
+
+```console
+checkov -f ignite22.tf --external-checks-dir . -c ignite22 --compact
+```
+
+<details><summary>compact output</summary>
 
 ![ckv-hcl-compact-output](img/ckv-hcl-compact-output.jpg)
 
@@ -189,10 +200,21 @@ terraform plan --out ignite22.binary && terraform show -json ignite22.binary | j
 
 The resulting JSON can then be scanned with Checkov:
 ```console
+checkov -f ignite22.json --external-checks-dir . -c ignite22
+```
+
+<details><summary>full output</summary>
+
+![ckv-plan-compact-output](img/ckv-plan-compact-output.jpg)
+
+</details>
+</br>
+
+```console
 checkov -f ignite22.json --external-checks-dir . -c ignite22 --compact 
 ```
 
-<details><summary>output</summary>
+<details><summary>compact output</summary>
 
 ![ckv-plan-compact-output](img/ckv-plan-compact-output.jpg)
 
