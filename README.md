@@ -6,7 +6,7 @@ Sample custom build policy (YAML format): [ignite22.tf](ignite22.tf)
 
 `ignite22.tf` 
 
-<details><summary>content</summary>
+<details><summary>file</summary>
 
 ```hcl
 resource "azurerm_resource_group" "ignite22" {
@@ -82,7 +82,7 @@ Sample Terraform HCL file used to verify that our custom policy flags misconfigu
 
 `ignite22.yaml:`
 
-<details><summary>content</summary>
+<details><summary>file</summary>
 
 ```yaml
 ---
@@ -114,7 +114,7 @@ Custom policies can be tested against our sample TF files using [**Checkov**](ht
 checkov -f ignite22.tf --external-checks-dir . -c ignite22
 ```
 
-<details><summary>full output</summary>
+<details><summary>output (full)</summary>
 
 ![ckv-hcl-compact-output](img/ckv-hcl-full-output.jpg)
 
@@ -125,7 +125,7 @@ checkov -f ignite22.tf --external-checks-dir . -c ignite22
 checkov -f ignite22.tf --external-checks-dir . -c ignite22 --compact
 ```
 
-<details><summary>compact output</summary>
+<details><summary>output (compact)</summary>
 
 ![ckv-hcl-compact-output](img/ckv-hcl-compact-output.jpg)
 
@@ -203,7 +203,7 @@ The resulting JSON can then be scanned with Checkov:
 checkov -f ignite22.json --external-checks-dir . -c ignite22
 ```
 
-<details><summary>full output</summary>
+<details><summary>output (full)</summary>
 
 ![ckv-plan-compact-output](img/ckv-plan-compact-output.jpg)
 
@@ -214,7 +214,7 @@ checkov -f ignite22.json --external-checks-dir . -c ignite22
 checkov -f ignite22.json --external-checks-dir . -c ignite22 --compact 
 ```
 
-<details><summary>compact output</summary>
+<details><summary>output (compact)</summary>
 
 ![ckv-plan-compact-output](img/ckv-plan-compact-output.jpg)
 
