@@ -198,4 +198,3 @@ checkov -f tfplan.json --external-checks-dir . -c ignite22 --compact
 
 </details>
 </br>
-
