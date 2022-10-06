@@ -8,7 +8,9 @@ Sample custom build policy (YAML format): [`ignite22.tf`](ignite22.tf)
 
 Sample Terraform HCL file used to verify that our custom policy flags misconfigurations appropriately: [`ignite22.yaml`](ignite22.yaml)  
 ```console
-```
+```  
+
+##### Checkov Scan of Terraform IaC file
 
 Custom policies can be tested against our sample TF files using [**Checkov**](https://www.checkov.io/)
 ```console
@@ -24,6 +26,8 @@ checkov -f <tf_file> -c <policy_id> --external-checks-dir <path_to_external_yaml
 checkov -d <tf_directory> -c <policy_id> --external-checks-dir <path_to_external_yaml_policies>
 ```
 
+
+##### Publishing a custom policy to Prisma Cloud Code Security (CCS)
 
 To publish this new build policy into our CCS tenant, we can use the [`pccs-policy-playground`](https://github.com/kartikp10/pccs-policy-playground) API Script designed by Kartik Pande:
 
@@ -60,4 +64,11 @@ pccs -d -id d7a8763d-c7dc-4a30-aa39-259c60bbca49
 ```
 ```
 Deleted successfully.
+```
+
+
+##### Checkov Scan of Terraform Plan file
+
+```console
+terraform plan --out tfplan.binary && terraform show -json tfplan.binary | jq . > tfplan.json
 ```

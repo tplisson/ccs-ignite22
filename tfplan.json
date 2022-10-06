@@ -1,0 +1,1163 @@
+{
+  "format_version": "0.2",
+  "terraform_version": "1.0.10",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "azurerm_container_group.ignite22_fail_01",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_fail_01",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "container": [
+              {
+                "commands": [],
+                "cpu": 0.5,
+                "cpu_limit": 0,
+                "environment_variables": {},
+                "gpu": [],
+                "gpu_limit": [],
+                "image": "mcr.microsoft.com/azuredocs/aci-helloworld:latest",
+                "liveness_probe": [],
+                "memory": 1.5,
+                "memory_limit": 0,
+                "name": "mcr-helloworld",
+                "ports": [
+                  {
+                    "port": 443,
+                    "protocol": "TCP"
+                  }
+                ],
+                "readiness_probe": [],
+                "secure_environment_variables": {},
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "dns_name_label": "ignite22fail01",
+            "exposed_port": [
+              {
+                "port": 443,
+                "protocol": "TCP"
+              }
+            ],
+            "fqdn": "ignite22fail01.canadacentral.azurecontainer.io",
+            "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail01",
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": [],
+            "ip_address": "20.175.216.209",
+            "ip_address_type": "Public",
+            "key_vault_key_id": null,
+            "location": "canadacentral",
+            "name": "ignite22fail01",
+            "network_profile_id": null,
+            "os_type": "Linux",
+            "resource_group_name": "ignite22",
+            "restart_policy": "Always",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "container": [
+              {
+                "commands": [],
+                "environment_variables": {},
+                "gpu": [],
+                "gpu_limit": [],
+                "liveness_probe": [],
+                "ports": [
+                  {}
+                ],
+                "readiness_probe": [],
+                "secure_environment_variables": {},
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "exposed_port": [
+              {}
+            ],
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": [],
+            "tags": {}
+          }
+        },
+        {
+          "address": "azurerm_container_group.ignite22_fail_02",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_fail_02",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "container": [
+              {
+                "commands": [],
+                "cpu": 0.5,
+                "cpu_limit": 0,
+                "environment_variables": {},
+                "gpu": [],
+                "gpu_limit": [],
+                "image": "docker.io/library/hello-world:latest",
+                "liveness_probe": [],
+                "memory": 1.5,
+                "memory_limit": 0,
+                "name": "dh-hello-world",
+                "ports": [
+                  {
+                    "port": 443,
+                    "protocol": "TCP"
+                  }
+                ],
+                "readiness_probe": [],
+                "secure_environment_variables": {},
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "dns_name_label": "ignite22fail02",
+            "exposed_port": [
+              {
+                "port": 443,
+                "protocol": "TCP"
+              }
+            ],
+            "fqdn": "ignite22fail02.canadacentral.azurecontainer.io",
+            "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail02",
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": [],
+            "ip_address": "20.48.128.198",
+            "ip_address_type": "Public",
+            "key_vault_key_id": null,
+            "location": "canadacentral",
+            "name": "ignite22fail02",
+            "network_profile_id": null,
+            "os_type": "Linux",
+            "resource_group_name": "ignite22",
+            "restart_policy": "Always",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "container": [
+              {
+                "commands": [],
+                "environment_variables": {},
+                "gpu": [],
+                "gpu_limit": [],
+                "liveness_probe": [],
+                "ports": [
+                  {}
+                ],
+                "readiness_probe": [],
+                "secure_environment_variables": {},
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "exposed_port": [
+              {}
+            ],
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": [],
+            "tags": {}
+          }
+        },
+        {
+          "address": "azurerm_container_group.ignite22_pass_01",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_pass_01",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "container": [
+              {
+                "cpu": 0.5,
+                "cpu_limit": null,
+                "environment_variables": null,
+                "gpu": [],
+                "gpu_limit": [],
+                "image": "ignite22.azurecr.io/ignite22-hello-world:latest",
+                "liveness_probe": [],
+                "memory": 1.5,
+                "memory_limit": null,
+                "name": "ignite22-hello-world",
+                "ports": [
+                  {
+                    "port": 443,
+                    "protocol": "TCP"
+                  }
+                ],
+                "readiness_probe": [],
+                "secure_environment_variables": null,
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "dns_name_label": "ignite22pass01",
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": [],
+            "ip_address_type": "Public",
+            "key_vault_key_id": null,
+            "location": "canadacentral",
+            "name": "ignite22pass01",
+            "network_profile_id": null,
+            "os_type": "Linux",
+            "resource_group_name": "ignite22",
+            "restart_policy": "Always",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "container": [
+              {
+                "commands": [],
+                "gpu": [],
+                "gpu_limit": [],
+                "liveness_probe": [],
+                "ports": [
+                  {}
+                ],
+                "readiness_probe": [],
+                "volume": []
+              }
+            ],
+            "diagnostics": [],
+            "dns_config": [],
+            "exposed_port": [],
+            "identity": [],
+            "image_registry_credential": [],
+            "init_container": []
+          }
+        },
+        {
+          "address": "azurerm_resource_group.ignite22",
+          "mode": "managed",
+          "type": "azurerm_resource_group",
+          "name": "ignite22",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22",
+            "location": "canadacentral",
+            "name": "ignite22",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "tags": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "azurerm_container_group.ignite22_fail_01",
+      "mode": "managed",
+      "type": "azurerm_container_group",
+      "name": "ignite22_fail_01",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "container": [
+            {
+              "commands": [],
+              "cpu": 0.5,
+              "cpu_limit": 0,
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "image": "mcr.microsoft.com/azuredocs/aci-helloworld:latest",
+              "liveness_probe": [],
+              "memory": 1.5,
+              "memory_limit": 0,
+              "name": "mcr-helloworld",
+              "ports": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": {},
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "dns_name_label": "ignite22fail01",
+          "exposed_port": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ],
+          "fqdn": "ignite22fail01.canadacentral.azurecontainer.io",
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail01",
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address": "20.175.216.209",
+          "ip_address_type": "Public",
+          "key_vault_key_id": null,
+          "location": "canadacentral",
+          "name": "ignite22fail01",
+          "network_profile_id": null,
+          "os_type": "Linux",
+          "resource_group_name": "ignite22",
+          "restart_policy": "Always",
+          "tags": {},
+          "timeouts": null
+        },
+        "after": {
+          "container": [
+            {
+              "commands": [],
+              "cpu": 0.5,
+              "cpu_limit": 0,
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "image": "mcr.microsoft.com/azuredocs/aci-helloworld:latest",
+              "liveness_probe": [],
+              "memory": 1.5,
+              "memory_limit": 0,
+              "name": "mcr-helloworld",
+              "ports": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": {},
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "dns_name_label": "ignite22fail01",
+          "exposed_port": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ],
+          "fqdn": "ignite22fail01.canadacentral.azurecontainer.io",
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail01",
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address": "20.175.216.209",
+          "ip_address_type": "Public",
+          "key_vault_key_id": null,
+          "location": "canadacentral",
+          "name": "ignite22fail01",
+          "network_profile_id": null,
+          "os_type": "Linux",
+          "resource_group_name": "ignite22",
+          "restart_policy": "Always",
+          "tags": {},
+          "timeouts": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "container": [
+            {
+              "commands": [],
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": true,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": [
+            {}
+          ],
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "tags": {}
+        },
+        "after_sensitive": {
+          "container": [
+            {
+              "commands": [],
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": true,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": [
+            {}
+          ],
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "tags": {}
+        }
+      }
+    },
+    {
+      "address": "azurerm_container_group.ignite22_fail_02",
+      "mode": "managed",
+      "type": "azurerm_container_group",
+      "name": "ignite22_fail_02",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "container": [
+            {
+              "commands": [],
+              "cpu": 0.5,
+              "cpu_limit": 0,
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "image": "docker.io/library/hello-world:latest",
+              "liveness_probe": [],
+              "memory": 1.5,
+              "memory_limit": 0,
+              "name": "dh-hello-world",
+              "ports": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": {},
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "dns_name_label": "ignite22fail02",
+          "exposed_port": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ],
+          "fqdn": "ignite22fail02.canadacentral.azurecontainer.io",
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail02",
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address": "20.48.128.198",
+          "ip_address_type": "Public",
+          "key_vault_key_id": null,
+          "location": "canadacentral",
+          "name": "ignite22fail02",
+          "network_profile_id": null,
+          "os_type": "Linux",
+          "resource_group_name": "ignite22",
+          "restart_policy": "Always",
+          "tags": {},
+          "timeouts": null
+        },
+        "after": {
+          "container": [
+            {
+              "commands": [],
+              "cpu": 0.5,
+              "cpu_limit": 0,
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "image": "docker.io/library/hello-world:latest",
+              "liveness_probe": [],
+              "memory": 1.5,
+              "memory_limit": 0,
+              "name": "dh-hello-world",
+              "ports": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": {},
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "dns_name_label": "ignite22fail02",
+          "exposed_port": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ],
+          "fqdn": "ignite22fail02.canadacentral.azurecontainer.io",
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail02",
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address": "20.48.128.198",
+          "ip_address_type": "Public",
+          "key_vault_key_id": null,
+          "location": "canadacentral",
+          "name": "ignite22fail02",
+          "network_profile_id": null,
+          "os_type": "Linux",
+          "resource_group_name": "ignite22",
+          "restart_policy": "Always",
+          "tags": {},
+          "timeouts": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "container": [
+            {
+              "commands": [],
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": true,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": [
+            {}
+          ],
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "tags": {}
+        },
+        "after_sensitive": {
+          "container": [
+            {
+              "commands": [],
+              "environment_variables": {},
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": true,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": [
+            {}
+          ],
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "tags": {}
+        }
+      }
+    },
+    {
+      "address": "azurerm_container_group.ignite22_pass_01",
+      "mode": "managed",
+      "type": "azurerm_container_group",
+      "name": "ignite22_pass_01",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "container": [
+            {
+              "cpu": 0.5,
+              "cpu_limit": null,
+              "environment_variables": null,
+              "gpu": [],
+              "gpu_limit": [],
+              "image": "ignite22.azurecr.io/ignite22-hello-world:latest",
+              "liveness_probe": [],
+              "memory": 1.5,
+              "memory_limit": null,
+              "name": "ignite22-hello-world",
+              "ports": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": null,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "dns_name_label": "ignite22pass01",
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address_type": "Public",
+          "key_vault_key_id": null,
+          "location": "canadacentral",
+          "name": "ignite22pass01",
+          "network_profile_id": null,
+          "os_type": "Linux",
+          "resource_group_name": "ignite22",
+          "restart_policy": "Always",
+          "tags": null,
+          "timeouts": null
+        },
+        "after_unknown": {
+          "container": [
+            {
+              "commands": true,
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": true,
+          "fqdn": true,
+          "id": true,
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": [],
+          "ip_address": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "container": [
+            {
+              "commands": [],
+              "gpu": [],
+              "gpu_limit": [],
+              "liveness_probe": [],
+              "ports": [
+                {}
+              ],
+              "readiness_probe": [],
+              "secure_environment_variables": true,
+              "volume": []
+            }
+          ],
+          "diagnostics": [],
+          "dns_config": [],
+          "exposed_port": [],
+          "identity": [],
+          "image_registry_credential": [],
+          "init_container": []
+        }
+      }
+    },
+    {
+      "address": "azurerm_resource_group.ignite22",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "ignite22",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22",
+          "location": "canadacentral",
+          "name": "ignite22",
+          "tags": {},
+          "timeouts": null
+        },
+        "after": {
+          "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22",
+          "location": "canadacentral",
+          "name": "ignite22",
+          "tags": {},
+          "timeouts": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "tags": {}
+        },
+        "after_sensitive": {
+          "tags": {}
+        }
+      }
+    }
+  ],
+  "prior_state": {
+    "format_version": "0.2",
+    "terraform_version": "1.0.10",
+    "values": {
+      "root_module": {
+        "resources": [
+          {
+            "address": "azurerm_container_group.ignite22_fail_01",
+            "mode": "managed",
+            "type": "azurerm_container_group",
+            "name": "ignite22_fail_01",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "schema_version": 0,
+            "values": {
+              "container": [
+                {
+                  "commands": [],
+                  "cpu": 0.5,
+                  "cpu_limit": 0,
+                  "environment_variables": {},
+                  "gpu": [],
+                  "gpu_limit": [],
+                  "image": "mcr.microsoft.com/azuredocs/aci-helloworld:latest",
+                  "liveness_probe": [],
+                  "memory": 1.5,
+                  "memory_limit": 0,
+                  "name": "mcr-helloworld",
+                  "ports": [
+                    {
+                      "port": 443,
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "readiness_probe": [],
+                  "secure_environment_variables": {},
+                  "volume": []
+                }
+              ],
+              "diagnostics": [],
+              "dns_config": [],
+              "dns_name_label": "ignite22fail01",
+              "exposed_port": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "fqdn": "ignite22fail01.canadacentral.azurecontainer.io",
+              "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail01",
+              "identity": [],
+              "image_registry_credential": [],
+              "init_container": [],
+              "ip_address": "20.175.216.209",
+              "ip_address_type": "Public",
+              "key_vault_key_id": null,
+              "location": "canadacentral",
+              "name": "ignite22fail01",
+              "network_profile_id": null,
+              "os_type": "Linux",
+              "resource_group_name": "ignite22",
+              "restart_policy": "Always",
+              "tags": {},
+              "timeouts": null
+            },
+            "sensitive_values": {
+              "container": [
+                {
+                  "commands": [],
+                  "environment_variables": {},
+                  "gpu": [],
+                  "gpu_limit": [],
+                  "liveness_probe": [],
+                  "ports": [
+                    {}
+                  ],
+                  "readiness_probe": [],
+                  "secure_environment_variables": {},
+                  "volume": []
+                }
+              ],
+              "diagnostics": [],
+              "dns_config": [],
+              "exposed_port": [
+                {}
+              ],
+              "identity": [],
+              "image_registry_credential": [],
+              "init_container": [],
+              "tags": {}
+            },
+            "depends_on": [
+              "azurerm_resource_group.ignite22"
+            ]
+          },
+          {
+            "address": "azurerm_container_group.ignite22_fail_02",
+            "mode": "managed",
+            "type": "azurerm_container_group",
+            "name": "ignite22_fail_02",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "schema_version": 0,
+            "values": {
+              "container": [
+                {
+                  "commands": [],
+                  "cpu": 0.5,
+                  "cpu_limit": 0,
+                  "environment_variables": {},
+                  "gpu": [],
+                  "gpu_limit": [],
+                  "image": "docker.io/library/hello-world:latest",
+                  "liveness_probe": [],
+                  "memory": 1.5,
+                  "memory_limit": 0,
+                  "name": "dh-hello-world",
+                  "ports": [
+                    {
+                      "port": 443,
+                      "protocol": "TCP"
+                    }
+                  ],
+                  "readiness_probe": [],
+                  "secure_environment_variables": {},
+                  "volume": []
+                }
+              ],
+              "diagnostics": [],
+              "dns_config": [],
+              "dns_name_label": "ignite22fail02",
+              "exposed_port": [
+                {
+                  "port": 443,
+                  "protocol": "TCP"
+                }
+              ],
+              "fqdn": "ignite22fail02.canadacentral.azurecontainer.io",
+              "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22/providers/Microsoft.ContainerInstance/containerGroups/ignite22fail02",
+              "identity": [],
+              "image_registry_credential": [],
+              "init_container": [],
+              "ip_address": "20.48.128.198",
+              "ip_address_type": "Public",
+              "key_vault_key_id": null,
+              "location": "canadacentral",
+              "name": "ignite22fail02",
+              "network_profile_id": null,
+              "os_type": "Linux",
+              "resource_group_name": "ignite22",
+              "restart_policy": "Always",
+              "tags": {},
+              "timeouts": null
+            },
+            "sensitive_values": {
+              "container": [
+                {
+                  "commands": [],
+                  "environment_variables": {},
+                  "gpu": [],
+                  "gpu_limit": [],
+                  "liveness_probe": [],
+                  "ports": [
+                    {}
+                  ],
+                  "readiness_probe": [],
+                  "secure_environment_variables": {},
+                  "volume": []
+                }
+              ],
+              "diagnostics": [],
+              "dns_config": [],
+              "exposed_port": [
+                {}
+              ],
+              "identity": [],
+              "image_registry_credential": [],
+              "init_container": [],
+              "tags": {}
+            },
+            "depends_on": [
+              "azurerm_resource_group.ignite22"
+            ]
+          },
+          {
+            "address": "azurerm_resource_group.ignite22",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "ignite22",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "schema_version": 0,
+            "values": {
+              "id": "/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec/resourceGroups/ignite22",
+              "location": "canadacentral",
+              "name": "ignite22",
+              "tags": {},
+              "timeouts": null
+            },
+            "sensitive_values": {
+              "tags": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "azurerm": {
+        "name": "azurerm",
+        "version_constraint": "<= 3.25.0",
+        "expressions": {
+          "features": [
+            {
+              "key_vault": [
+                {
+                  "purge_soft_delete_on_destroy": {
+                    "constant_value": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "azurerm_container_group.ignite22_fail_01",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_fail_01",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "container": [
+              {
+                "cpu": {
+                  "constant_value": "0.5"
+                },
+                "image": {
+                  "constant_value": "mcr.microsoft.com/azuredocs/aci-helloworld:latest"
+                },
+                "memory": {
+                  "constant_value": "1.5"
+                },
+                "name": {
+                  "constant_value": "mcr-helloworld"
+                },
+                "ports": [
+                  {
+                    "port": {
+                      "constant_value": 443
+                    },
+                    "protocol": {
+                      "constant_value": "TCP"
+                    }
+                  }
+                ]
+              }
+            ],
+            "dns_name_label": {
+              "constant_value": "ignite22fail01"
+            },
+            "ip_address_type": {
+              "constant_value": "Public"
+            },
+            "location": {
+              "references": [
+                "azurerm_resource_group.ignite22.location",
+                "azurerm_resource_group.ignite22"
+              ]
+            },
+            "name": {
+              "constant_value": "ignite22fail01"
+            },
+            "os_type": {
+              "constant_value": "Linux"
+            },
+            "resource_group_name": {
+              "references": [
+                "azurerm_resource_group.ignite22.name",
+                "azurerm_resource_group.ignite22"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "azurerm_container_group.ignite22_fail_02",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_fail_02",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "container": [
+              {
+                "cpu": {
+                  "constant_value": "0.5"
+                },
+                "image": {
+                  "constant_value": "docker.io/library/hello-world:latest"
+                },
+                "memory": {
+                  "constant_value": "1.5"
+                },
+                "name": {
+                  "constant_value": "dh-hello-world"
+                },
+                "ports": [
+                  {
+                    "port": {
+                      "constant_value": 443
+                    },
+                    "protocol": {
+                      "constant_value": "TCP"
+                    }
+                  }
+                ]
+              }
+            ],
+            "dns_name_label": {
+              "constant_value": "ignite22fail02"
+            },
+            "ip_address_type": {
+              "constant_value": "Public"
+            },
+            "location": {
+              "references": [
+                "azurerm_resource_group.ignite22.location",
+                "azurerm_resource_group.ignite22"
+              ]
+            },
+            "name": {
+              "constant_value": "ignite22fail02"
+            },
+            "os_type": {
+              "constant_value": "Linux"
+            },
+            "resource_group_name": {
+              "references": [
+                "azurerm_resource_group.ignite22.name",
+                "azurerm_resource_group.ignite22"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "azurerm_container_group.ignite22_pass_01",
+          "mode": "managed",
+          "type": "azurerm_container_group",
+          "name": "ignite22_pass_01",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "container": [
+              {
+                "cpu": {
+                  "constant_value": "0.5"
+                },
+                "image": {
+                  "constant_value": "ignite22.azurecr.io/ignite22-hello-world:latest"
+                },
+                "memory": {
+                  "constant_value": "1.5"
+                },
+                "name": {
+                  "constant_value": "ignite22-hello-world"
+                },
+                "ports": [
+                  {
+                    "port": {
+                      "constant_value": 443
+                    },
+                    "protocol": {
+                      "constant_value": "TCP"
+                    }
+                  }
+                ]
+              }
+            ],
+            "dns_name_label": {
+              "constant_value": "ignite22pass01"
+            },
+            "ip_address_type": {
+              "constant_value": "Public"
+            },
+            "location": {
+              "references": [
+                "azurerm_resource_group.ignite22.location",
+                "azurerm_resource_group.ignite22"
+              ]
+            },
+            "name": {
+              "constant_value": "ignite22pass01"
+            },
+            "os_type": {
+              "constant_value": "Linux"
+            },
+            "resource_group_name": {
+              "references": [
+                "azurerm_resource_group.ignite22.name",
+                "azurerm_resource_group.ignite22"
+              ]
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "azurerm_resource_group.ignite22",
+          "mode": "managed",
+          "type": "azurerm_resource_group",
+          "name": "ignite22",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "location": {
+              "constant_value": "Canada Central"
+            },
+            "name": {
+              "constant_value": "ignite22"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  }
+}

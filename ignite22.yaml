@@ -13,5 +13,5 @@
           resource_types: 
           - azurerm_container_group
           attribute: container.image
-          operator: not_contains
-          value: "mcr.microsoft.com"
+          operator: contains
+          value: "ignite22.azurecr.io"
