@@ -1,6 +1,6 @@
 # Code Security PS presentation at Ignite'22
 
-##### This is a simple demo about testing your own custom build policy for Prisma Cloud Code Security (CCS).
+#### This is a simple demo about testing your own custom build policy for Prisma Cloud Code Security (CCS).
 
 Sample custom build policy (YAML format): [ignite22.tf](ignite22.tf)  
 
